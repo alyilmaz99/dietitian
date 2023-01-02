@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import '../../core/constant/color_const.dart';
 
 Widget fistNameField(BuildContext context, String labelText, double top,
-    TextEditingController? controller) {
+    TextEditingController? controller, double width) {
   return Positioned(
-    width: MediaQuery.of(context).size.width / 1.5,
+    width: width,
     height: 50,
     left: MediaQuery.of(context).size.width / 6,
     top: top,

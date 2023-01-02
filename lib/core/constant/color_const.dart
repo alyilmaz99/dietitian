@@ -10,4 +10,5 @@ abstract class ColorConst {
   static Color textColor = Colors.black.withOpacity(0.6);
   static const Color white = Colors.white;
   static const Color beigeSplash = Color.fromRGBO(250, 248, 241, 1);
+  static Color black = Colors.black;
 }

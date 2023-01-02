@@ -3,14 +3,14 @@ import 'package:gradient_slide_to_act/gradient_slide_to_act.dart';
 import '../../core/constant/color_const.dart';
 import '../../view/home/homePage/view/homepage_view.dart';
 
-Widget sliderButton(BuildContext context) {
+Widget sliderButton(BuildContext context, String text) {
   return Positioned(
-    top: MediaQuery.of(context).size.height / 1.60,
+    top: MediaQuery.of(context).size.height / 1.4,
     left: MediaQuery.of(context).size.width / 6,
     width: MediaQuery.of(context).size.width / 1.5,
     height: 50,
     child: GradientSlideToAct(
-      text: 'LOGIN',
+      text: text,
       dragableIcon: Icons.arrow_forward,
       textStyle: const TextStyle(
         color: Colors.black87,
