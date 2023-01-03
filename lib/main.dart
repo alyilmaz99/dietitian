@@ -1,4 +1,3 @@
-import 'package:dietitian/view/auth/singup/view/signup_view.dart';
 import 'package:dietitian/view/auth/splash/view/splash_view.dart';
 
 import 'package:flutter/material.dart';
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SplashScreenView(),
+      home: const SplashScreenView(),
     );
   }
 }

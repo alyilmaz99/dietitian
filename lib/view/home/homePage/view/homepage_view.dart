@@ -1,5 +1,6 @@
 import 'package:circle_nav_bar/circle_nav_bar.dart';
 import 'package:dietitian/core/constant/color_const.dart';
+import 'package:dietitian/view/home/dailyAssessment/view/daily_assessment_view.dart';
 import 'package:flutter/material.dart';
 
 import '../../profile/view/profile_view.dart';
@@ -35,43 +36,43 @@ class _HomePageState extends State<HomePage>
       bottomNavigationBar: CircleNavBar(
         activeIcons: [
           Icon(
+            Icons.data_saver_on,
+            color: ColorConst.textColor,
+          ),
+          Icon(
+            Icons.view_day_outlined,
+            color: ColorConst.textColor,
+          ),
+          Icon(
+            Icons.date_range,
+            color: ColorConst.textColor,
+          ),
+          Icon(
             Icons.person,
-            color: ColorConst.textColor,
-          ),
-          Icon(
-            Icons.home,
-            color: ColorConst.textColor,
-          ),
-          Icon(
-            Icons.favorite,
-            color: ColorConst.textColor,
-          ),
-          Icon(
-            Icons.favorite,
             color: ColorConst.textColor,
           ),
         ],
         inactiveIcons: [
           Text(
-            "My",
+            "Daily",
             style: TextStyle(
               color: ColorConst.textColor,
             ),
           ),
           Text(
-            "Home",
+            "Program",
             style: TextStyle(
               color: ColorConst.textColor,
             ),
           ),
           Text(
-            "Like",
+            "Date",
             style: TextStyle(
               color: ColorConst.textColor,
             ),
           ),
           Text(
-            "Like",
+            "Profile",
             style: TextStyle(
               color: ColorConst.textColor,
             ),
@@ -110,11 +111,7 @@ class _HomePageState extends State<HomePage>
           tabIndex = v;
         },
         children: [
-          Container(
-            width: double.infinity,
-            height: double.infinity,
-            color: ColorConst.beigeSplash,
-          ),
+          const DailyView(),
           Container(
             width: double.infinity,
             height: double.infinity,
