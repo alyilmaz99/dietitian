@@ -21,10 +21,13 @@ class _DatePageViewState extends DateViewModel {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Scaffold(
-        floatingActionButton: FloatingActionButton(
-          elevation: 8,
-          onPressed: _addEvent,
-          child: const Icon(Icons.add),
+        floatingActionButton: Padding(
+          padding: const EdgeInsets.only(bottom: 80.0, right: 20),
+          child: FloatingActionButton(
+            elevation: 8,
+            onPressed: _addEvent,
+            child: const Icon(Icons.add),
+          ),
         ),
         body: const MonthViewWidget(),
       ),
