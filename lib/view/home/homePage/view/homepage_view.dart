@@ -1,6 +1,7 @@
 import 'package:circle_nav_bar/circle_nav_bar.dart';
 import 'package:dietitian/core/constant/color_const.dart';
 import 'package:dietitian/view/home/dailyAssessment/view/daily_assessment_view.dart';
+import 'package:dietitian/view/home/date/view/date_view.dart';
 import 'package:flutter/material.dart';
 
 import '../../profile/view/profile_view.dart';
@@ -117,11 +118,7 @@ class _HomePageState extends State<HomePage>
             height: double.infinity,
             color: ColorConst.beigeSplash,
           ),
-          Container(
-            width: double.infinity,
-            height: double.infinity,
-            color: ColorConst.beigeSplash,
-          ),
+          const DatePageView(),
           ProfileView(),
         ],
       ),
