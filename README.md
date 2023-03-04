@@ -1,3 +1,3 @@
 # dietitian
 
-Dietitian app with flutter and firebase
+dead project
